@@ -35,13 +35,37 @@ export default function App() {
           )}
 
           <div
-            className={
-              activeMenu
-                ? "dark:bg-main-bg bg-main-bg min-h-screen md:ml:72 w-full"
-                : "dark:bg-main-bg bg-main-bg min-h-screen w-full flex-2"
+            className={`dark:bg-main-bg bg-main-bg min-h-screen w-full ${
+              activeMenu ? `md:ml-72` : `flex-2`
             }
+`}
           >
-            {" "}
+            <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full">
+              Navbar
+            </div>{" "}
+          </div>
+
+          <div>
+            <Routes>
+              {/*Dashboard*/}
+              <Route path="/" element="Ecommerce" />
+              <Route path="/ecommerce" element="Ecommerce" />
+
+              {/*Pages */}
+              <Route path="/orders" element="Orders" />
+              <Route
+                path="/employees"
+                element="Employees
+              "
+              />
+              <Route path="/customers" element="Customers" />
+
+              {/*Pages*/}
+              <Route path="/kanban" element="Kanban" />
+              <Route path="/editor" element="Editor" />
+              <Route path="/calender" element="Calender" />
+              <Route path="/color-picker" element="Color-picker" />
+            </Routes>
           </div>
         </div>
       </BrowserRouter>{" "}
