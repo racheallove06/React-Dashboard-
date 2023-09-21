@@ -5,6 +5,26 @@ import { FiSettings } from "react-icons/fi";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import "./App.css";
 
+import { Navbar, Footer, SideBar, ThemeSetting } from "./components";
+
+import {
+  Ecommerce,
+  Orders,
+  Calenders,
+  Employees,
+  Stacked,
+  Pyramid,
+  Customers,
+  Kanban,
+  Area,
+  Bar,
+  Pie,
+  Financial,
+  Colorpicker,
+  ColorMapping,
+  Editor,
+} from "/pages";
+
 export default function App() {
   let activeMenu = false;
   return (
