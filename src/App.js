@@ -6,6 +6,7 @@ import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import "./App.css";
 
 export default function App() {
+  let activeMenu = true;
   return (
     <div className="App">
       <BrowserRouter>
@@ -14,11 +15,22 @@ export default function App() {
             {" "}
             <TooltipComponent content="Setting" position="Top">
               {" "}
-              <button>
+              <button
+                type="button"
+                className="text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white "
+                style={{ background: "blue", borderRadius: "50%" }}
+              >
                 <FiSettings />
               </button>
             </TooltipComponent>{" "}
           </div>
+          {activeMenu ? (
+            <div className="w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white ">
+              Sidebar{" "}
+            </div>
+          ) : (
+            <div>Sidebar w-0 </div>
+          )}
         </div>
       </BrowserRouter>{" "}
     </div>
