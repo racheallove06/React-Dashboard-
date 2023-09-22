@@ -23,7 +23,7 @@ import {
   Colorpicker,
   ColorMapping,
   Editor,
-} from "/pages";
+} from "./pages";
 
 export default function App() {
   let activeMenu = false;
