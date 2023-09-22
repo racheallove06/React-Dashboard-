@@ -33,7 +33,7 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
   </TooltipComponent>
 );
 const Navbar = () => {
-  const { activeMenu, setActiveMenu, isClicked, setIsClicked } =
+  const { activeMenu, setActiveMenu, isClicked, setIsClicked, handleClick } =
     useStateContext();
   return (
     <div className="flex justify-between p-2 md:mx-6 relative ">
