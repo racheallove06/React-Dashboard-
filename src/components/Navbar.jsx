@@ -22,19 +22,43 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
       className="relative text-xl rounded-full p-3 hover:bg-light-gray"
     >
       {" "}
-      <span
+      <span //for the dot
         style={{ background: dotColor }}
         className="absolute inline-flex rounded-full h-2 w-2 right-2 top-2   "
-      >
-        {" "}
-        {icon}{" "}
-      </span>
+      />{" "}
+      {icon}{" "}
     </button>
   </TooltipComponent>
 );
 const Navbar = () => {
-  const { activeMenu, setActiveMenu, isClicked, setIsClicked, handleClick } =
-    useStateContext();
+  const {
+    activeMenu,
+    setActiveMenu,
+    isClicked,
+    setIsClicked,
+    handleClick,
+    screenSize,
+    setScreenSize,
+  } = useStateContext();
+  //first use effect which accepts a call back function
+  useEffect(() => {
+    //new function for handling the screen size
+    const handleResize = () => setScreenSize(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    handleResize(); //calling the function to figure out the width
+    //remove the eventlistener to track the width of the screen
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  //second useeffect to keep track of the screen size changes
+  useEffect(() => {
+    if (screenSize <= 900) {
+      setActiveMenu(false);
+    } else {
+      setActiveMenu(true);
+    }
+  }, [screenSize]);
+
   return (
     <div className="flex justify-between p-2 md:mx-6 relative ">
       {" "}
