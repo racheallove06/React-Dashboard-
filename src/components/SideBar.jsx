@@ -13,10 +13,32 @@ export default function SideBar() {
         <>
           {" "}
           <div className="flex justify-between items-center">
-            <Link to="/" onClick={() => {}} className="items-center">
+            <Link
+              to="/"
+              onClick={() => {}}
+              className="items-center gap-3 mt-4 tracking-tight ml-3 text-xl font-extrabold dark:text-white text-slate-900 "
+            >
               {" "}
               <SiShopware /> <span>Shoppy</span>
-            </Link>{" "}
+            </Link>
+            <TooltipComponent content="Menu" position="BottomCenter">
+              <button
+                type="button"
+                onClick={() => {}}
+                className="text-xl rounded-full p-3 hover:bg-light-gray mt-4 block md:hidden"
+              >
+                {" "}
+                <MdOutlineCancel />
+              </button>
+            </TooltipComponent>{" "}
+          </div>
+          <div className="mt-10">
+            {" "}
+            {links.map((item) => (
+              <div className="text-gray-400 m-3 mt-4 uppercase">
+                {item.title}{" "}
+              </div>
+            ))}
           </div>{" "}
         </>
       )}
