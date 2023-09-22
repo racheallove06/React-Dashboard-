@@ -4,8 +4,9 @@ import { SiShopware } from "react-icons/si";
 import { MdOutlineCancel } from "react-icons/md";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { links } from "../data/dummy";
+import { useStateContext } from "../contexts/ContextProvider";
 export default function SideBar() {
-  const activeMenu = true;
+  const { activeMenu, setActiveMenu } = useStateContext();
 
   const activeLink =
     "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-white text-md m-2";
@@ -20,7 +21,7 @@ export default function SideBar() {
           <div className="flex justify-between items-center">
             <Link
               to="/"
-              onClick={() => {}}
+              onClick={() => setActiveMenu(false)}
               className="items-center gap-3 mt-4 tracking-tight ml-3 text-xl font-extrabold dark:text-white text-slate-900 "
             >
               {" "}
@@ -29,7 +30,9 @@ export default function SideBar() {
             <TooltipComponent content="Menu" position="BottomCenter">
               <button
                 type="button"
-                onClick={() => {}}
+                onClick={() =>
+                  setActiveMenu((prevActiveMenu) => !prevActiveMenu)
+                }
                 className="text-xl rounded-full p-3 hover:bg-light-gray mt-4 block md:hidden"
               >
                 {" "}

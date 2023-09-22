@@ -26,8 +26,11 @@ import {
   Line,
 } from "./pages";
 
+import { useStateContext } from "./contexts/ContextProvider";
+
 export default function App() {
-  let activeMenu = true;
+  const { activeMenu } = true;
+
   return (
     <div className="App">
       <BrowserRouter>
