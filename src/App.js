@@ -29,7 +29,7 @@ import {
 import { useStateContext } from "./contexts/ContextProvider";
 
 export default function App() {
-  const { activeMenu } = true;
+  const { activeMenu } = useStateContext();
 
   return (
     <div className="App">
@@ -84,6 +84,7 @@ export default function App() {
               <Route path="/kanban" element={<Kanban />} />
               <Route path="/editor" element={<Editor />} />
               <Route path="/calender" element={<Calendar />} />
+
               <Route path="/color-picker" element={<ColorPicker />} />
 
               {/*Charts*/}

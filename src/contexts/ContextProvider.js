@@ -10,10 +10,10 @@ const initialState = {
 };
 
 export const ContextProvider = ({ children }) => {
-  const [activeMenu, setactiveMenu] = useState(true);
+  const [activeMenu, setActiveMenu] = useState(true);
   return (
     //created my provider
-    <StateContext.Provider value={{ activeMenu }}>
+    <StateContext.Provider value={{ activeMenu, setActiveMenu }}>
       {children}
     </StateContext.Provider>
   );
