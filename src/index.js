@@ -8,6 +8,5 @@ ReactDOM.render(
     {" "}
     <App />
   </ContextProvider>,
-
   document.getElementById("root")
 );
