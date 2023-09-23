@@ -113,7 +113,7 @@ export default function Ecommerce() {
                   height="80px"
                   width="250px "
                   data={SparklineAreaData}
-                  color="blue"
+                  color="red"
                 />
               </div>
             </div>
