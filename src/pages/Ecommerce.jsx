@@ -21,6 +21,15 @@ export default function Ecommerce() {
               <p className=" text-2xl">$6752</p>
             </div>
           </div>
+          <div className="mt-6">
+            <Button
+              color="white"
+              bgColor="blue"
+              text="Download"
+              borderRadius="10px"
+              size="md"
+            />
+          </div>
         </div>
       </div>
     </div>
