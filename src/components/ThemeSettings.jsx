@@ -33,7 +33,28 @@ const ThemeSettings = () => {
               onChange={() => {}}
               checked={true}
             />
+            <label htmlFor="light" className="ml-2 text-md cursor-pointer">
+              Light
+            </label>
           </div>
+
+          <div className="mt-4">
+            <input
+              type="radio"
+              id="light"
+              name="theme"
+              value="Dark"
+              className="cursor-pointer"
+              onChange={() => {}}
+              checked={true}
+            />
+            <label htmlFor="light" className="ml-2 text-md cursor-pointer">
+              Dark
+            </label>
+          </div>
+        </div>
+        <div className="flex-col border-t-1 border-color p-4 ml-4">
+          <p className="font-semibold text-lg">Theme Colors</p>
         </div>
       </div>
     </div>
