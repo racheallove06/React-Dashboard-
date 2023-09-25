@@ -29,7 +29,7 @@ import {
 import { useStateContext } from "./contexts/ContextProvider";
 
 export default function App() {
-  const { activeMenu, themeSettings } = useStateContext();
+  const { activeMenu, themeSettings, setThemeSetting } = useStateContext();
 
   return (
     <div className="App">
@@ -43,6 +43,7 @@ export default function App() {
                 type="button"
                 className="text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white "
                 style={{ background: "blue", borderRadius: "50%" }}
+                onClick={() => setThemeSetting(true)}
               >
                 <FiSettings />
               </button>

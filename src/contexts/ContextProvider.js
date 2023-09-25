@@ -32,7 +32,7 @@ export const ContextProvider = ({ children }) => {
     setIsClicked({ ...initialState, [clicked]: true });
   };
   return (
-    //created my provider
+    //created my provider//
     <StateContext.Provider
       value={{
         activeMenu,
@@ -49,6 +49,8 @@ export const ContextProvider = ({ children }) => {
         currentMode,
         themeSetting,
         setThemeSetting,
+        setMode,
+        setColor,
       }}
     >
       {children}
