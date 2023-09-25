@@ -24,10 +24,10 @@ export const ContextProvider = ({ children }) => {
     setThemeSetting(false);
   };
 
-  const setColor = (e) => {
-    setCurrentColor(e.target.value);
+  const setColor = (color) => {
+    setCurrentColor(color);
 
-    localStorage.setItem("colorMode", e.target.value);
+    localStorage.setItem("colorMode", color);
     setThemeSetting(false);
   };
   const handleClick = (clicked) => {
