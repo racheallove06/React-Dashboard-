@@ -5,7 +5,7 @@ import { FiSettings } from "react-icons/fi";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import "./App.css";
 
-import { Navbar, Footer, SideBar, ThemeSetting } from "./components";
+import { Navbar, Footer, SideBar, ThemeSettings } from "./components";
 
 import {
   Ecommerce,
@@ -68,6 +68,8 @@ export default function App() {
               <Navbar />
             </div>{" "}
             <div>
+              <ThemeSettings />
+
               <Routes>
                 {/*Dashboard*/}
                 <Route path="/" element={<Ecommerce />} />
