@@ -11,6 +11,7 @@ import {
 import { useStateContext } from "../contexts/ContextProvider";
 
 export default function Ecommerce() {
+  const { currentColor } = useStateContext;
   return (
     <div className="mt-24">
       <div className="flex flex-wrap lg:flex-nowrap justify-center ">
@@ -24,7 +25,7 @@ export default function Ecommerce() {
           <div className="mt-6">
             <Button
               color="white"
-              bgColor="blue"
+              bgColor={currentColor}
               text="Download"
               borderRadius="10px"
               size="md"
@@ -113,13 +114,13 @@ export default function Ecommerce() {
                   height="80px"
                   width="250px "
                   data={SparklineAreaData}
-                  color="blue"
+                  color={currentColor}
                 />
               </div>{" "}
               <div className="mt-10">
                 <Button
                   color="white"
-                  bgColor="blue"
+                  bgColor={currentColor}
                   text="Download report"
                   borderRadius="10px"
                 />
