@@ -24,10 +24,11 @@ const Calender = () => {
       <Header category="App" title="Calendar" />
       <ScheduleComponent
         height="650px"
-        eventSettings={(dataSource = { dataSource: scheduleData })}
+        eventSettings={{ dataSource: scheduleData }}
       >
         <Inject
           services={[Day, Week, WorkWeek, Month, Agenda, Resize, DragAndDrop]}
+          selectedDate={new Date(2021, 0, 10)}
         />
       </ScheduleComponent>{" "}
     </div>
