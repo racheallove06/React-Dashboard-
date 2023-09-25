@@ -84,8 +84,8 @@ export default function App() {
                 <Route path="/calendar" element={<Calendar />} />
 
                 <Route path="/color-picker" element={<ColorPicker />} />
-
                 {/*Charts*/}
+
                 <Route path="/LINE" element={<Line />} />
                 <Route path="/area" element={<Area />} />
                 <Route path="/bar" element={<Bar />} />
