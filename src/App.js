@@ -29,7 +29,7 @@ import {
 import { useStateContext } from "./contexts/ContextProvider";
 
 export default function App() {
-  const { activeMenu, themeSettings, setThemeSetting } = useStateContext();
+  const { activeMenu, themeSetting, setThemeSetting } = useStateContext();
 
   return (
     <div className="App">
@@ -69,7 +69,7 @@ export default function App() {
               <Navbar />
             </div>{" "}
             <div>
-              {themeSettings && <ThemeSettings />}
+              {themeSetting && <ThemeSettings />}
 
               <Routes>
                 {/*Dashboard*/}
