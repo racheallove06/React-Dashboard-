@@ -14,6 +14,6 @@ import {
   LinePrimaryYAxis,
 } from "../../data/dummy";
 
-export default function Line() {
-  return <div>LineChart</div>;
+export default function LineChart() {
+  return <ChartComponent></ChartComponent>;
 }
