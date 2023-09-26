@@ -11,8 +11,8 @@ import {
 import { Header } from "../../components";
 import {
   areaCustomSeries,
-  AreaPrimaryXAxis,
-  AreaPrimaryYAxis,
+  areaPrimaryXAxis,
+  areaPrimaryYAxis,
 } from "../../data/dummy";
 import { useStateContext } from "../../contexts/ContextProvider";
 export default function LineChart() {
@@ -25,13 +25,13 @@ export default function LineChart() {
         <ChartComponent
           id="line-chart"
           height="420px "
-          primaryXAxis={AreaPrimaryXAxis}
-          primaryYAxis={AreaPrimaryYAxis}
+          primaryXAxis={areaPrimaryXAxis}
+          primaryYAxis={areaPrimaryYAxis}
           chartArea={{ border: { width: 0 } }}
           tooltip={{ enable: true }}
           background={currentMode === "Dark" ? "#33373e" : "#fff"}
         >
-          <Inject services={[LineSeries, DateTime, Legend, Tooltip]} />
+          <Inject services={[SplineAreaSeries, DateTime, Legend]} />
           <SeriesCollectionDirective>
             {areaCustomSeries.map((item, index) => (
               <SeriesDirective key={index} {...item} />
