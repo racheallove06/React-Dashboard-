@@ -11,7 +11,7 @@ import {
 import { useStateContext } from "../contexts/ContextProvider";
 
 export default function Ecommerce() {
-  const { currentColor } = useStateContext;
+  const { currentColor } = useStateContext();
   return (
     <div className="mt-24">
       <div className="flex flex-wrap lg:flex-nowrap justify-center ">
