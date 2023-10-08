@@ -2957,11 +2957,11 @@ export const dropdownData = [
   },
 ];
 export const SparklineAreaData = [
-  { x: 1, yval: 2 },
-  { x: 2, yval: 6 },
-  { x: 3, yval: 8 },
-  { x: 4, yval: 5 },
-  { x: 5, yval: 10 },
+  { x: 1, yval: 3 },
+  { x: 4, yval: 10 },
+  { x: 6, yval: 8 },
+  { x: 9, yval: 15 },
+  { x: 7, yval: 10 },
 ];
 
 export const lineCustomSeries = [
@@ -3034,22 +3034,22 @@ export const ecomPieChartData = [
 
 export const stackedChartData = [
   [
-    { x: "Jan", y: 111.1 },
-    { x: "Feb", y: 127.3 },
-    { x: "Mar", y: 143.4 },
-    { x: "Apr", y: 159.9 },
-    { x: "May", y: 159.9 },
-    { x: "Jun", y: 159.9 },
-    { x: "July", y: 159.9 },
+    { x: "Jun", y: 200 },
+    { x: "July", y: 256 },
+    { x: "Aug", y: 355 },
+    { x: "Sep", y: 487 },
+    { x: "Oct", y: 250 },
+    { x: "Nov", y: 468 },
+    { x: "Dec", y: 266 },
   ],
   [
-    { x: "Jan", y: 111.1 },
-    { x: "Feb", y: 127.3 },
-    { x: "Mar", y: 143.4 },
-    { x: "Apr", y: 159.9 },
-    { x: "May", y: 159.9 },
-    { x: "Jun", y: 159.9 },
-    { x: "July", y: 159.9 },
+    { x: "Jun", y: 200 },
+    { x: "July", y: 256 },
+    { x: "Aug", y: 355 },
+    { x: "Sep", y: 487 },
+    { x: "Oct", y: 250 },
+    { x: "Nov", y: 468 },
+    { x: "Dec", y: 266 },
   ],
 ];
 
@@ -3060,7 +3060,7 @@ export const stackedCustomSeries = [
     yName: "y",
     name: "Budget",
     type: "StackingColumn",
-    background: "blue",
+    background: "f76b8a",
   },
 
   {

@@ -95,8 +95,8 @@ export default function Ecommerce() {
             <div className="border-r-1 border-color m-4 pr-10">
               <div>
                 <p>
-                  <span className="text-3xl font-semibold "> $93,438</span>
-                  <span className="p-1.5 hover:drop-shadow-xl cursor-pointer rounded-full text-white bg-green-400 ml-3 text-xs   ">
+                  <span className="text-3xl font-semibold "> $45,789</span>
+                  <span className="p-1.5 hover:drop-shadow-xl cursor-pointer rounded-full text-white bg-[#f76b8a] ml-3 text-xs   ">
                     23%
                   </span>
                 </p>
@@ -105,13 +105,16 @@ export default function Ecommerce() {
               <div className="mt-8">
                 <p>
                   <span className="text-3xl font-semibold "> $48,438</span>
+                  <span className="p-1.5 hover:drop-shadow-xl cursor-pointer rounded-full text-white bg-[#f76b8a] ml-3 text-xs   ">
+                    23%
+                  </span>
                 </p>
-                <p className="text-gray-500 mt-1">Expense</p>
+                <p className="text-gray-500 mt-1">Expenses</p>
               </div>
               {/*First chart Sparkline */}
               <div className="mt-5">
                 <SparkLine
-                  currentColor="blue"
+                  currentColor="#f76b8a"
                   id="line-sparkline"
                   type="Line"
                   height="80px"
