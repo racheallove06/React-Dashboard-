@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { SiShopware } from "react-icons/si";
+import { SiShopify } from "react-icons/si";
 import { MdOutlineCancel } from "react-icons/md";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { links } from "../data/dummy";
@@ -31,9 +31,10 @@ export default function SideBar() {
               className="items-center gap-3 mt-4 tracking-tight ml-3 text-xl font-extrabold dark:text-white text-slate-900 "
             >
               {" "}
-              <SiShopware /> <span>Shoppy</span>
+              <SiShopify className="text-[#f76b8a]" />{" "}
+              <span className="text-[#f76b8a]">Shopify</span>
             </Link>
-            <TooltipComponent content="Menu" position="BottomCenter">
+            <TooltipComponent content="Menu" position="TopRight">
               <button
                 type="button"
                 onClick={() =>
@@ -42,7 +43,7 @@ export default function SideBar() {
                 className="text-xl rounded-full p-3 hover:bg-light-gray mt-4 block md:hidden"
               >
                 {" "}
-                <MdOutlineCancel />
+                <MdOutlineCancel className="text-[#f76b8a]" />
               </button>
             </TooltipComponent>{" "}
           </div>
@@ -50,7 +51,7 @@ export default function SideBar() {
             {" "}
             {links.map((item) => (
               <div key="item.title">
-                <p className="text-gray-400 m-3 mt-4 uppercase">
+                <p className="text-[#f76b8a] m-3 mt-4 uppercase">
                   {" "}
                   {item.title}{" "}
                 </p>
@@ -67,7 +68,7 @@ export default function SideBar() {
                     }
                   >
                     {link.icon}
-                    <span className=" capitalize">{link.name}</span>{" "}
+                    <span className="  capitalize">{link.name}</span>{" "}
                   </NavLink>
                 ))}
               </div>
