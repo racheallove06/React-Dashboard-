@@ -2037,11 +2037,11 @@ export const employeesData = [
 export const ordersData = [
   {
     OrderID: 10248,
-    CustomerName: "Vinet",
+    CustomerName: "Ruth",
 
-    TotalAmount: 32.38,
-    OrderItems: "Fresh Tomato",
-    Location: "USA",
+    TotalAmount: 300,
+    OrderItems: "Bacon",
+    Location: "Nairobi",
     Status: "pending",
     StatusBg: "#FB9678",
     ProductImage: product6,
