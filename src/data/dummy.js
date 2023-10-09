@@ -350,17 +350,17 @@ export const colorMappingData = [
 ];
 
 export const rangeColorMapping = [
-  { label: "1°C to 10°C", start: "1", end: "10", colors: colorMappingData[1] },
+  { label: "1 to 10", start: "1", end: "10", colors: colorMappingData[1] },
 
   {
-    label: "11°C to 20°C",
+    label: "11 to 20",
     start: "11",
     end: "20",
     colors: colorMappingData[2],
   },
 
   {
-    label: "21°C to 30°C",
+    label: "21 to 30",
     start: "21",
     end: "30",
     colors: colorMappingData[3],
@@ -5777,10 +5777,10 @@ export const financialChartData = [
   },
 ];
 export const PyramidData = [
-  { x: "Sweet Treats", y: 120, text: "120 cal" },
-  { x: "Milk, Youghnut, Cheese", y: 435, text: "435 cal" },
-  { x: "Vegetables", y: 470, text: "470 cal" },
-  { x: "Meat, Poultry, Fish", y: 475, text: "475 cal" },
-  { x: "Fruits", y: 520, text: "520 cal" },
-  { x: "Bread, Rice, Pasta", y: 930, text: "930 cal" },
+  { x: "Mangoes", y: 120, text: "120 cal" },
+  { x: "Oranges, Bananas, Broccoli", y: 435, text: "435 cal" },
+  { x: "Lettuce", y: 470, text: "470 cal" },
+  { x: "Pineapple, Cherries, Grapes", y: 475, text: "475 cal" },
+  { x: "Ovacadoes", y: 520, text: "520 cal" },
+  { x: "Tomatoes, Papaya, Watermelon", y: 930, text: "930 cal" },
 ];
