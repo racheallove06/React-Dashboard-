@@ -12,7 +12,7 @@ const change = (args) => {
 
 const ColorPicker = () => {
   return (
-    <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-[#d9f2ff] rounded-3xl">
+    <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-[#d9f2ff] rounded-3xl dark:bg-[#33373E]">
       <Header category="App" title="ColorPicker" />
       <div className="text-center">
         <div id="preview" />

@@ -17,7 +17,7 @@ import { ordersData, ContextMenuItems, ordersGrid } from "../data/dummy";
 import { Header } from "../components";
 const Orders = () => {
   return (
-    <div className="m-2 md:m-10 p-2 md:p-10 bg-[#d9f2ff] rounded-3xl  dark:text-[#ffff] dark:bg-[#20232A] ">
+    <div className="m-2 md:m-10 p-2 md:p-10 bg-[#d9f2ff] rounded-3xl  dark:text-[#ffff] dark:bg-[#33373E]">
       <Header category="Page" title="Orders" />
       {/* where the data goes */}
       <GridComponent
