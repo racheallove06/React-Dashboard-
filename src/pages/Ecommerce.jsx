@@ -15,22 +15,13 @@ export default function Ecommerce() {
   return (
     <div className="mt-24">
       <div className="flex flex-wrap lg:flex-nowrap justify-center ">
-        <div className="bg-[#9d6ae8] dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-80 p-8 pt-9 m-3  bg-no-repeat bg-cover bg-center">
-          <div className="flex justify-between items-center  ">
-            <div>
-              <p className="font-bold ">Earnings</p>
-              <p className=" text-2xl">$6752</p>
-            </div>
+        <div className="flex justify-between items-center w-full ">
+          <div className=" dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-80 p-8 pt-4 m-3 bg-hero-pattern  bg-no-repeat bg-cover bg-center"></div>
+          <div className=" dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-80 p-8 pt-4 m-3  bg-hero-pattern bg-cover bg-center">
+            {" "}
+            Our Veggitable Dashboard
           </div>
-          <div className="mt-6">
-            <Button
-              color="white"
-              bgColor={currentColor}
-              text="Download"
-              borderRadius="10px"
-              size="md"
-            />
-          </div>
+          <div className=" dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-80 p-8 pt-4 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-center"></div>
         </div>
       </div>
       <div className="flex m-3 flex-wrap justify-center gap-1 items-center">
@@ -38,7 +29,7 @@ export default function Ecommerce() {
         {earningData.map((item) => (
           <div
             key={item.title}
-            className="bg-[#d9f2ff] dark:text-gray-200 dark:bg-secondary-dark-bg md:w-56 p-4 pt-9 rounded-2xl shadow-lg shadow-gray-200"
+            className="bg-[#d9f2ff] dark:text-gray-200 dark:bg-secondary-dark-bg md:w-56 p-4 pt-9 rounded-2xl "
           >
             {" "}
             <button
@@ -67,7 +58,7 @@ export default function Ecommerce() {
 
       {/*revenue section */}
       <div className="flex gap-10 flex-wrap justify-center ">
-        <div className="bg-[#d9f2ff] dark:text-[#e4f1fe] dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-780 shadow-md shadow-gray-200">
+        <div className="bg-[#d9f2ff] dark:text-[#e4f1fe] dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-780 ">
           <div className="flex justify-between">
             <p className="font-semibold text-xl text-[#f76b8a]">
               Revenue Updates

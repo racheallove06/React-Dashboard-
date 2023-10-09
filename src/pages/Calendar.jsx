@@ -19,12 +19,13 @@ import { Header } from "../components";
 
 const Calender = () => {
   return (
-    <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white-rounded-3xl  ">
+    <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-[#d9f2ff] rounded-3xl  ">
       {" "}
       <Header category="App" title="Calendar" />
       <ScheduleComponent
         height="650px"
         eventSettings={{ dataSource: scheduleData }}
+        background={currentMode === "Dark" ? "#33373e" : "#fff"}
       >
         <Inject
           services={[Day, Week, WorkWeek, Month, Agenda, Resize, DragAndDrop]}

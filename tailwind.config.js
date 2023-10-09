@@ -39,7 +39,13 @@ module.exports = {
         590: "590px",
       },
       backgroundImage: {
-        "hero-pattern": "url('https://i.ibb.co/MkvLDfb/Rectangle-4389.png')",
+        "hero-pattern":
+          "url('https://i.pinimg.com/564x/b6/97/25/b697255f7ba7257a53de7391e15da020.jpg')",
+      },
+
+      secondImage: {
+        "second-image":
+          "url('https://i.pinimg.com/474x/d4/0b/fd/d40bfd39293e54b2cd3c77f518331091.jpg')",
       },
     },
   },
