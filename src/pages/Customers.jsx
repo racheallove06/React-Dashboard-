@@ -3,7 +3,7 @@ import {
   GridComponent,
   ColumnDirective,
   ColumnsDirective,
-  Page,
+  Page,   
   Selection,
   Inject,
   Edit,
